@@ -1,0 +1,138 @@
+/******************************************************************
+ninetofive
+/******************************************************************
+Reset
+******************************************************************/
+@import url(https://fonts.googleapis.com/css?family=Quicksand:400,700,300|Playfair+Display:400,400italic,700italic);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,700,300italic,300);
+
+html, div, span, applet, object, iframe, h1, h3, h4, p, blockquote, pre, a, abbr, acronym, address {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font:inherit;
+	vertical-align: baseline;
+	font-weight: normal;
+	font-family: inherit;
+	-webkit-font-smoothing: antialiased;
+}
+/* HTML5 display-role reset for older browsers */
+
+body {
+	line-height: 1;
+	font-family: 'Open Sans';
+}
+ol, ul {
+	font-family: 'Open Sans';
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+
+a {
+	font-family: 'Open Sans';
+	outline: none;
+	text-decoration: none;
+}
+/******************************************************************
+Print Styles
+******************************************************************/
+
+
+/******************************************************************
+Main CSS
+
+div#main {
+	z-index: -1;
+	width: 340px;
+	margin: 200px auto 20px auto;
+}
+.title {
+	line-height: 1.2em;
+	position: relative;
+	margin-left: 40px;
+}
+
+******************************************************************/
+
+input#search {
+	font-family:'Sans-Serif';
+	width: 285px;
+	height: 25px;
+	padding: 5px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	outline: none;
+	border: 1px solid #ababab;
+	font-size: 20px;
+	line-height: 25px;
+	color: #ababab;
+}
+
+input#search:hover, input#search:focus {
+	color: #3b3b3b;
+	border: 1px solid #36a2d2;
+	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25) inset, 0 1px 0 rgba(255, 255, 255, 1);
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25) inset, 0 1px 0 rgba(255, 255, 255, 1);
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25) inset, 0 1px 0 rgba(255, 255, 255, 1);
+}
+p#results-text {
+	display: none;
+}
+ul#results {
+	/*display: none;*/
+	overflow:scroll;
+	position: absolute;
+	max-height: 200px;
+	max-width: 220px;
+	margin-top: px;
+	background-color:rgb(255, 255, 255);
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	-webkit-box-shadow: rgba(0, 0, 0, .15) 0 1px 3px;
+	-moz-box-shadow: rgba(0,0,0,.15) 0 1px 3px;
+	box-shadow: rgba(0, 0, 0, .15) 0 1px 3px;
+	
+}
+ul#results li {
+	padding: 2px;
+	cursor: pointer;
+	border-top: 1px solid #cdcdcd;
+	z-index: -1;
+
+	transition: background-color .3s ease-in-out;
+	-moz-transition: background-color .3s ease-in-out;
+	-webkit-transition: background-color .3s ease-in-out;
+}
+ul#results li:hover {
+	background-color: #F7F7F7;
+}
+ul#results li:first-child {
+	border-top: none;
+}
+ul#results li h3, ul#results li p {
+	transition: color .3s ease-in-out;
+	-moz-transition: color .3s ease-in-out;
+	-webkit-transition: color .3s ease-in-out;
+	color: #616161;
+	line-height: 1.2em;
+}
+ul#results li:hover h3, ul#results li:hover p  {
+	color: #c77966;
+	font-weight: bold;
+
+}
+
+ul#results li:hover a {
+	border-bottom: none;
+}
